@@ -1,8 +1,13 @@
-import "./globals.css";
+
+
+/**
+ * Represents the layout component for the application.
+ * @param children - The child components to be rendered within the layout.
+ * @returns The layout component.
+ */
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
-
 import {Providers} from './Providers'
 
 const inter = Inter({ subsets: ["latin"] });

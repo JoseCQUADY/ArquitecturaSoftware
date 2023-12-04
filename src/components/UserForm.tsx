@@ -1,3 +1,9 @@
+/**
+ * A form component for creating or updating user information.
+ * 
+ * @returns The UserForm component.
+ */
+
 "use client"
 import React, { use, useRef } from 'react'
 import { useState, useEffect } from "react"

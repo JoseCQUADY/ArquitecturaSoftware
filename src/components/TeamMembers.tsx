@@ -1,3 +1,8 @@
+/**
+ * Renders a section displaying team members.
+ * @returns The JSX element representing the team members section.
+ */
+
 import MemberCard from "./MemberCard"
 
 export default function TeamMembers() {

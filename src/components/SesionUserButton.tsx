@@ -1,3 +1,6 @@
+/**
+ * Renders a component that displays a sign-in or sign-out button based on the user's session status.
+ */
 import React from 'react';
 import { useSession, signIn, signOut } from 'next-auth/react';
 import { Toaster, toast } from 'sonner';

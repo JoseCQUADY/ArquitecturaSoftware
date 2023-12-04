@@ -1,3 +1,8 @@
+/**
+ * Renders a welcome component based on the user's session.
+ * If the user is authenticated, it displays a personalized greeting and a link to the CRUD page.
+ * If the user is not authenticated, it displays a generic greeting and a link to sign in.
+ */
 "use client";
 import { useSession } from 'next-auth/react';
 import { useTypewriter } from 'react-simple-typewriter';

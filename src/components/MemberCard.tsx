@@ -1,21 +1,35 @@
-"use client"
-import React from 'react';
 
+"use client"
+import React from "react";
+
+/**
+ * Props for the MemberCard component.
+ */
 interface MemberCardProps {
     memberName: string;
     memberURL: string;
 }
 
+/**
+ * Component that displays the image and name of each team member given two arguments (name and image URL).
+ * @param memberName - The name of the member.
+ * @param memberURL - The URL of the member's image.
+ */
 const MemberCard: React.FC<MemberCardProps> = ({ memberName, memberURL }) => {
     const [valor, setValor] = React.useState(0);
+
+    /**
+     * Function to increment the value.
+     */
     const sumar = () => {
         setValor(valor + 1);
         console.log(valor);
     }
+
     return (
         <div className="w-60 py-20">
             <a href="#">
-                <img className="hover:grow hover:shadow-lg h-60 w-60 w-full rounded-full" src={memberURL} alt={memberName} />
+                <img className="hover:grow hover:shadow-lg h-60 w-60  rounded-full" src={memberURL} alt={memberName} />
                 <div className="pt-3 flex items-center justify-between">
                     <p className="">{memberName}</p>
                     <button onClick={sumar}>

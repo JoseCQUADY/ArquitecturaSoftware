@@ -1,6 +1,8 @@
+/**
+ * Configuration options for authentication in the Next.js API route.
+ */
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
-
 
 export const authOptions = {
   providers: [
@@ -11,9 +13,19 @@ export const authOptions = {
   ],
 };
 
+/**
+ * Handler for authentication in the Next.js API route.
+ */
 export const authHandler = NextAuth(authOptions);
 
+/**
+ * Handler for GET requests in the Next.js API route.
+ */
 export const GET = authHandler;
+
+/**
+ * Handler for POST requests in the Next.js API route.
+ */
 export const POST = authHandler;
 
 

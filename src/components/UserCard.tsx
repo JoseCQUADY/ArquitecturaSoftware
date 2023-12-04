@@ -1,3 +1,10 @@
+/**
+ * Represents a user card component.
+ * @param {UserCardProps} props - The props for the UserCard component.
+ * @param {User} props.user - The user object containing username, email, weight, and id.
+ * @returns {JSX.Element} The rendered UserCard component.
+ */
+
 "use client"
 import { useRouter } from "next/navigation";
 import Link from "next/link";
